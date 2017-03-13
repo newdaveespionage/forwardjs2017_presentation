@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Shower Presentation Engine</title>
+	<title>Forward JS 2017 in Review</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
+	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-4x3.css">
 </head>
 <body class="shower list">
 
 	<header class="caption">
-		<h1>Shower Presentation Engine</h1>
-		<p>Yours Truly, Famous Inc.</p>
+		<h1>Forward JS 2017</h1>
+		<p>David Cox-Espenlaub, You Tech, LLC</p>
 	</header>
 
 	<section class="slide" id="cover">
-		<h2>Shower Presentation Engine</h2>
-		<p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+		<h2>Forward JS 2017</h2>
+		<p>A recap of learnings by David Cox-Espenlaub</p>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+			<img class="cover" src="pictures/cover_trimmed.png" alt="People at Forward JS in 2014">
 			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
+				<a href="http://forwardjs.com">© Forward JS</a>
 			</figcaption>
 		</figure>
 		<style>
@@ -44,162 +44,354 @@
 	</section>
 
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>What I'm Covering Today</h2>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
-		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Plain text on your slides</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-	</section>
-
-	<section class="slide">
-		<h2>Two columns if you like</h2>
-		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-	</section>
-
-	<section class="slide">
-		<h2>All kind of lists</h2>
-		<ol>
-			<li>Simple lists are marked with bullets</li>
-			<li>Ordered lists begin with a number</li>
-			<li>You can even nest lists one inside another
-				<ul>
-					<li>Or mix their types</li>
-					<li>But do not go too far</li>
-					<li>Otherwise audience will be bored</li>
-				</ul>
-			</li>
-			<li>Look, seven rows exactly!</li>
+			<li class="next">Webpack</li>
+			<!-- <li class="next">React for UI Libraries</li> -->
+			<li class="next">Redux using Async</li>
 		</ol>
 	</section>
 
 	<section class="slide">
-		<h2>Serious citations</h2>
+		<p class="shout shrink">Webpack?</p>
+	</section>
+
+	<section class="slide">
+		<h2>Webpack?</h2>
+		<figure>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
+		</figure>
 		<figure>
 			<blockquote>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+				<p>It takes stuff that is nice for you to write and makes it into stuff that is nice for your browser to read.</p>
 			</blockquote>
-			<figcaption>Marcus Tullius Cicero</figcaption>
+			<figcaption>Naomi Jacobs</figcaption>
 		</figure>
 	</section>
 
 	<section class="slide">
-		<h2>Code samples</h2>
-		<pre>
-			<code>&lt;!DOCTYPE html&gt;</code>
-			<code class="mark">&lt;html lang="en"&gt;</code>
-			<code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-			<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-			<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-			<code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-			<code><mark>&lt;/head&gt;</mark></code>
-		</pre>
-	</section>
-
-	<section class="slide">
-		<h2>Even tables</h2>
-		<table>
-		<tr>
-			<th scope="col">Locavore</th>
-			<th>Umami</th>
-			<th>Helvetica</th>
-			<th>Vegan</th>
-		</tr>
-		<tr>
-			<th scope="row">Fingerstache</th>
-			<td>Kale</td>
-			<td>Chips</td>
-			<td>Keytar</td>
-		</tr>
-		<tr>
-			<th scope="row">Sriracha</th>
-			<td>Gluten-free</td>
-			<td>Ennui</td>
-			<td>Keffiyeh</td>
-		</tr>
-		<tr>
-			<th scope="row">Thundercats</th>
-			<td>Jean</td>
-			<td>Shorts</td>
-			<td>Biodiesel</td>
-		</tr>
-		<tr>
-			<th scope="row">Terry</th>
-			<td>Richardson</td>
-			<td>Swag</td>
-			<td>Blog</td>
-		</tr>
-		</table>
-		<p>It’s good to have information organized.</p>
-	</section>
-
-	<section class="slide" id="picture">
-		<h2>Pictures</h2>
+		<h2>Webpack?</h2>
 		<figure>
-			<img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
 		</figure>
-		<style>
-			#picture h2 {
-				color:#FFF;
-				}
-		</style>
-	</section>
-
-	<section class="slide">
-		<h2 class="shout shrink">You can even shout this way</h2>
-	</section>
-
-	<section class="slide">
-		<h2>Inner navigation</h2>
+		<p>Provides solutions for:</p>
 		<ol>
-			<li>Lets you reveal list items one by one</li>
-			<li class="next">To keep some key points</li>
-			<li class="next">In secret from audience</li>
-			<li class="next">But it will work only once</li>
-			<li class="next">Nobody wants to see the same joke twice</li>
+			<li>Namespacing issues</li>
+			<li class="next">Files needing to be changed before they can go to the client</li>
+			<li class="next">Efficient chunking and timing of code being sent to the browser</li>
+			<li class="next">Leveraging modular code in a typically async world</li>
 		</ol>
 	</section>
 
-	<section class="slide grid">
-		<h2>All nicely aligned to grid</h2>
+	<section class="slide">
+		<h2>Webpack...</h2>
+		<figure>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
+		</figure>
+		<p>Q: Wait, what's a module?</p>
+		<p class="next">A: A system of writing js that allows files to declare dependencies on each other by importing and exporting modules from those files.</p>
 	</section>
 
-	<section class="slide" id="see-more">
-		<h2 class="shout">
-			<img src="pictures/logo.svg" alt="Shower logo">
-			<a href="https://github.com/shower/shower">See more on GitHub</a>
-		</h2>
-		<style>
-			#see-more h2 {
-				font-size:100px
-				}
-			#see-more img {
-				width:0.72em;
-				height:0.72em;
-				}
-		</style>
+	<section class="slide">
+		<h2>Webpack...</h2>
+		<figure>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
+		</figure>
+		<p>Q: Wait, Javascript has modules?</p>
+		<p class="next">A: Yes. It's complicated.</p>
+	</section>
+
+	<section class="slide">
+		<h2>Asynchronous Module Definition</h2>
+		<pre>
+			<code class="mark next">define({</code>
+			<code>	pluralize: function(count, word){</code>
+			<code>		return count === 1 ? word : word + 's';</code>
+			<code>	}</code>
+			<code>});</code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>CommonJS Modules</h2>
+		<pre>
+			<code>function pluralize(count,word) {</code>
+			<code>	return count === 1 ? word : word + 's';</code>
+			<code>};</code>
+			<code class="mark next">module.exports { pluralize:pluralize }</code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>ES6 Modules</h2>
+		<pre>
+			<code class="mark next">export { pluralize }</code>
+			<code>function pluralize(count,word) {</code>
+			<code>	return count === 1 ? word : word + 's';</code>
+			<code>};</code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>Webpack...</h2>
+		<figure>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
+		</figure>
+		<ol>
+			<li>Works with CommonJS modules <br />(has an adapter for AMD, uses Babel for ES6 Modules)</li>
+			<li class="next">Works with single or multiple points of entry</li>
+			<li class="next">Can leverage plugins in its loader system to do things such as <br />transpile, uglify, minify, supply polyfills</li>
+			<li class="next">Tree-shaking (but only if you're using explicit export definitions)</li>
+		</ol>
+	</section>
+
+	<section class="slide">
+		<h2>Summary: Webpack</h2>
+		<figure>
+			<img class="cover" src="pictures/webpack_anim.gif" alt="Animated Webpack Cube Logo" style="opacity:0.5">
+		</figure>
+		<p>
+			If you want to:
+		</p>
+		<ul>
+			<li>Have control over how your front-end is loaded by the browser</li>
+			<li>Ensure your dependencies are resolved before your code goes live</li>
+			<li>Tie the parts of your build configuration together</li>
+		</ul>
+		<p class="next">Webpack is a comprehensive build tool that meets these needs</p>
+	</section>
+
+	<!-- <section class="slide">
+		<h2 class="shout shrink">React For UI</h2>
+	</section>
+
+	<section class="slide">
+		<h2>React</h2>
+		<h3>Benefits when creating a UI component library</h3>
+		<figure>
+			<img class="cover "src="pictures/react_logo.svg" alt="Reactjs logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Less files per component</li>
+			<li class="next">
+				Markup is a function of state and properties (props) <br />
+				ui components can be independent of data source, but still have full control over interactions
+			</li>
+			<li class="next">
+				Easily ported into different frameworks <br />
+				for instance: use a react component in a Marionette view
+			</li>
+			<li class="next">
+				Easily tested using React Storybook <a href="https://getstorybook.io/">https://getstorybook.io/</a>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>A reusable UI Component is</h2>
+		<figure>
+			<img class="cover "src="pictures/react_logo.svg" alt="Reactjs logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Self sufficient
+				<ul>
+					<li class="next">Do one thing</li>
+					<li class="next">Do one thing well</li>
+					<li class="next">Do one thing consistently</li>
+					<li class="next">No bootstrapping just to get it up and running</li>
+					<li class="next">Allow state to be initialized</li>
+					<li class="next">Enough state to be useful</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>A reusable UI Component is</h2>
+		<figure>
+			<img class="cover "src="pictures/react_logo.svg" alt="Reactjs logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Easy to integrate with
+				<ul>
+					<li class="next">Provide an easy to understand interface</li>
+					<li class="next">Specify propTypes and critical props</li>
+					<li class="next">Create documentation, both automated and startup</li>
+					<li class="next">Use as few props as possible</li>
+					<li class="next">Allow multiple types per prop</li>
+					<li class="next">Decouple sub-components when optional</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>A reusable UI Component is</h2>
+		<figure>
+			<img class="cover "src="pictures/react_logo.svg" alt="Reactjs logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Easy to integrate with
+				<ul>
+					<li class="next">Remove backdoors</li>
+					<li class="next">Fill container element</li>
+					<li class="next">
+						Publish assets intelligently
+						<ul>
+							<li class="next">Publish to multiple sources</li>
+							<li class="next">Use semver</li>
+							<li class="next">Transpile to lowest supported</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</section> -->
+
+	<section class="slide">
+		<h2 class="shout shrink">Redux Async</h2>
+	</section>
+
+	<section class="slide">
+		<h2>Redux?</h2>
+		<figure>
+			<img src="pictures/cat_pet.gif" alt="Cat being petted">
+		</figure>
+		<a href="https://github.com/freddyrangel/async-in-redux-workshop">https://github.com/freddyrangel/async-in-redux-workshop</a>
+	</section>
+
+	<section class="slide">
+		<h2>Redux?</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<figure>
+			<blockquote cite="http://redux.js.org">
+				<p>... is a predictable state container for JavaScript apps.</p>
+			</blockquote>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<h2>Redux?</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Provides apis and methods for tracking and maintaining data state</li>
+			<li class="next">Helps create consistent behavior across environments</li>
+			<li class="next">Simplifies testing, especially where state matters</li>
+			<li class="next">Can work with any view library (not just React)</li>
+			<li class="next">Solves time travel?</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Redux?!</h2>
+		<figure>
+			<img src="pictures/back_to_the_future.gif" alt="Back to the future delorean preparing for time travel">
+		</figure>
+		Talk by Dan Abramov <a href="https://www.youtube.com/watch?v=xsSnOQynTHs">https://www.youtube.com/watch?v=xsSnOQynTHs</a>
+	</section>
+
+	<section class="slide">
+		<h2>Redux -> Async</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Out of the box, Redux is synchronous</li>
+			<li class="next">Thunks provide a way to hide the async behavior</li>
+			<li class="next">Sagas provide an entire framework for using ES6 generators <br />to control "side-effects"</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Thunks</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Handle dispatch asyncronously for you when you return a function instead of a state</li>
+			<li class="next">Allows functions that require special async considerations to look and act the same outside of their own code</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Sagas</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Uses ES6 generators which are functions that maintain their own state out of the box</li>
+			<li class="next">Generators are inherently testable as standalone components because they respond without the parent framework</li>
+			<li class="next">Multiple actions (repeated button pushing) are handled using takeEvery and takeLatest</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Summary: Thunks vs. Sagas</h2>
+		<figure>
+			<img class="cover" src="pictures/redux_logo.png" alt="Redux logo" style="opacity:0.25">
+		</figure>
+		<ul>
+			<li>Thunk code is more succint, and handles simple side-effects without adding a lot to the codebase</li>
+			<li>Sagas provide more robust support for a multitude of side-effect states, and are more testable</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Resources</h2>
+		<ul>
+			<li>Webpack Overview: <a href="https://naomijacobs.github.io/WebpackTalk">https://naomijacobs.github.io/WebpackTalk</a></li>
+			<li>Webpack Full-Day Session: <a href="https://github.com/freddyrangel/webpack-101">https://github.com/freddyrangel/webpack-101</a></li>
+			<li>Redux Async Full-Day Session: <a href="https://github.com/freddyrangel/async-in-redux-workshop">https://github.com/freddyrangel/async-in-redux-workshop</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Resources</h2>
+		<p>
+			Notes from this year: <a href="https://github.com/newdaveespionage/ForwardJS2017">https://github.com/newdaveespionage/ForwardJS2017</a>
+		</p>
+		Check out:
+		<ul>
+			<li>React Plus X (React for UI Component Libraries)</li>
+			<li>Service Workers</li>
+			<li>End-to-End automation for testing</li>
+			<li>Automation Discussion Panel</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>Resources</h2>
+		<ul>
+			<li>My presentation I gave to the creative team after Forward 3: <a href="https://github.com/newdaveespionage/forward3">https://github.com/newdaveespionage/forward3</a></li>
+			<li>React Storybook: <a href="https://getstorybook.io/">https://getstorybook.io/</a></li>
+			<li>Cisco Spark:
+				<ul>
+					<li>Doctrine Test: <a href="https://www.npmjs.com/package/@ciscospark/jsdoctrinetest">https://www.npmjs.com/package/@ciscospark/jsdoctrinetest</a></li>
+					<li>Spark SDK: <a href="https://github.com/ciscospark/spark-js-sdk">https://github.com/ciscospark/spark-js-sdk</a></li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2 class="shout shrink">Thank You!</h2>
 	</section>
 
 	<footer class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		<a href="http://you.net">YOU TECH</a>
 	</footer>
 
 	<div class="progress"></div>
 
 	<script src="node_modules/shower-core/shower.min.js"></script>
-	<!-- Copyright © 2017 Yours Truly, Famous Inc. -->
+	<!-- Copyright © 2017 David Cox-Espenlaub. -->
 
 </body>
 </html>

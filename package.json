@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "del": "^2.2.1",
-    "fs": "0.0.2",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
     "gulp-rename": "^1.2.2",
@@ -42,8 +41,7 @@
     "gulp-zip": "^4.0.0",
     "merge-stream": "^1.0.0",
     "path-exists-cli": "^1.0.0",
-    "run-sequence": "^1.2.2",
-    "shower-core": "^2.0.8"
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
     "prepare": "gulp prepare",
